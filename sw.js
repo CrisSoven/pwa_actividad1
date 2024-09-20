@@ -7,18 +7,18 @@ self.addEventListener("install", (event) => {
 self.addEventListener("fetch", (event) => {
   console.log(event.request.url);
 
-  if (event.request.url.includes("style.css")) {
-    const respuesta = new Response(
-      `body{
-                color: blue;
-                background-color: #000;
-            }`,
-      {
-        headers: {
-          "Content-Type": "text/css",
-        },
-      }
-    );
-    event.respondWith(respuesta);
-  }
+  // if (event.request.url.includes("style.css")) {
+  //   const respuesta = new Response(
+  //     `body{
+  //               color: blue;
+  //               background-color: #000;
+  //           }`,
+  //     {
+  //       headers: {
+  //         "Content-Type": "text/css",
+  //       },
+  //     }
+  //   );
+  //   event.respondWith(respuesta);
+  // }
 });
